@@ -104,7 +104,7 @@ function template_html_above()
 
 	// Here comes the JavaScript bits!
 	echo '
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="', $settings['theme_url'], '/scripts/bootstrap.min.js?fin20"></script>
 	<script type="text/javascript" src="', $settings['default_theme_url'], '/scripts/script.js?fin20"></script>
 	<script type="text/javascript" src="', $settings['theme_url'], '/scripts/theme.js?fin20"></script>
@@ -180,21 +180,20 @@ function template_html_above()
 function template_body_above()
 {
 	global $context, $settings, $options, $scripturl, $txt, $modSettings;
-	
+
 	// Show the menu here, according to the menu sub template.
 	template_menu();
 
 	echo !empty($settings['forum_width']) ? '
 <div class="wrapper" style="width: ' . $settings['forum_width'] . '">' : '', '
 	<div id="header">';
-	
-		if ($context['in_maintenance'] && $context['user']['is_admin'] || !empty($context['unapproved_members']) || !empty($context['open_mod_reports']) && $context['show_open_reports'])
 
-		{
-	echo '
+	if ($context['in_maintenance'] && $context['user']['is_admin'] || !empty($context['unapproved_members']) || !empty($context['open_mod_reports']) && $context['show_open_reports'])
+	{
+		echo '
 		<ul class="reset floatright">';
-		
-	// Is the forum in maintenance mode?
+
+		// Is the forum in maintenance mode?
 		if ($context['in_maintenance'] && $context['user']['is_admin'])
 			echo '
 				<li class="notice">', $txt['maintain_mode_on'], '</li>';
@@ -204,18 +203,17 @@ function template_body_above()
 			echo '
 				<li class="notice">', $context['unapproved_members'] == 1 ? $txt['approve_thereis'] : $txt['approve_thereare'], ' <a href="', $scripturl, '?action=admin;area=viewmembers;sa=browse;type=approve">', $context['unapproved_members'] == 1 ? $txt['approve_member'] : $context['unapproved_members'] . ' ' . $txt['approve_members'], '</a> ', $txt['approve_members_waiting'], '</li>';
 
+		// Any mod reports open?
 		if (!empty($context['open_mod_reports']) && $context['show_open_reports'])
 			echo '
 				<li class="notice"><a href="', $scripturl, '?action=moderate;area=reports">', sprintf($txt['mod_reports_waiting'], $context['open_mod_reports']), '</a></li>';
-				
-	echo '
+
+		echo '
 		</ul>';
-		}
-		
+	}
 	else
 	{
-		
-	echo '
+		echo '
 		<div id="search_area">
 			<form id="search_form" action="', $scripturl, '?action=search2" method="post" accept-charset="', $context['character_set'], '">
 				<input type="text" name="search" value="', $txt['search'], '..." onfocus="this.value = \'\';" onblur="if(this.value==\'\') this.value=\'', $txt['search'], '...\';" class="placeholder" />&nbsp;
@@ -229,13 +227,11 @@ function template_body_above()
 				echo ' 
 			</form>
 		</div>';
-	
 	}
-	
 	echo '
 		<h1 class="forumtitle"><a href="', $scripturl, '">', empty($context['header_logo_url_html_safe']) ? '<img src="' . $settings['images_url'] . '/theme/logo.png" alt="' . $context['forum_name'] . '" />' : '<img src="' . $context['header_logo_url_html_safe'] . '" alt="' . $context['forum_name'] . '" />', '</a></h1>
 	</div>';
-	
+
 	// Show the navigation tree.
 	echo '
 		<div class="main_page_lnktree">
@@ -248,7 +244,6 @@ function template_body_above()
 		<div id="main_content_section">';
 
 	// Custom banners and shoutboxes should be placed here, before the linktree.
-
 }
 
 function template_body_below()
@@ -271,24 +266,25 @@ function template_body_below()
 		<div class="floatleft">
 			<div id="quicknav">
 				<ul>';
-		
-							if(!empty($settings['twitter_username']))
-							echo '
-					<li><a class="social_icon twitter" href="http://twitter.com/', $settings['twitter_username'] , '" target="_blank"></a></li>';
-					
-							if(!empty($settings['facebook_username']))
-							echo '
-					<li><a class="social_icon facebook" href="http://fb.me/', $settings['facebook_username'] , '" target="_blank"></a></li>';
-										
-							if(!empty($settings['youtube_username']))
-							echo '
-					<li><a class="social_icon youtube" href="http://youtube.com/', $settings['youtube_username'] , '" target="_blank"></a></li>';
-					
-							echo '
-					<li><a class="social_icon rss" href="', empty($settings['rss_url']) ? '' . $scripturl . '?action=.xml;type=rss' : '' . $settings['rss_url'] . '', '" target="_blank"></a></li>';
-						
-						echo '
-								
+
+			// Twitter
+			if(!empty($settings['twitter_username']))
+				echo '
+					<li><a class="social_icon twitter" href="https://twitter.com/', $settings['twitter_username'] , '" target="_blank"></a></li>';
+
+			// Facebook
+			if(!empty($settings['facebook_username']))
+				echo '
+					<li><a class="social_icon facebook" href="https://fb.me/', $settings['facebook_username'] , '" target="_blank"></a></li>';
+
+			// Youtube
+			if(!empty($settings['youtube_username']))
+				echo '
+					<li><a class="social_icon youtube" href="https://youtube.com/', $settings['youtube_username'] , '" target="_blank"></a></li>';
+
+			// RSS
+			echo '
+					<li><a class="social_icon rss" href="', empty($settings['rss_url']) ? '' . $scripturl . '?action=.xml;type=rss' : '' . $settings['rss_url'] . '', '" target="_blank"></a></li>
 				</ul>	
 			</div>
 		</div>
@@ -381,7 +377,8 @@ function template_menu()
 						<li>
 							<a href="', $button['href'], '"', isset($button['target']) ? ' target="' . $button['target'] . '"' : '', '>', $button['title'], '</a>
 						</li>';
-					
+
+			// Theme settings
 			if ($act == 'admin')
 					echo '
 						<li>
@@ -408,11 +405,9 @@ function template_menu()
 										', $grandchildbutton['title'], '
 									</a>
 								</li>';
-
 					echo '
 							</ul>';
 				}
-
 				echo '
 						</li>';
 			}
@@ -422,7 +417,6 @@ function template_menu()
 		echo '
 				</li>';
 	}
-
 	echo '
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -443,7 +437,6 @@ function template_menu()
 					echo '
 						<li><a href="#" data-toggle="modal" data-target="#loginModal">', $txt['login'], '</a></li>
 						<li><a href="', $scripturl, '?action=register">', $txt['register'], '</a></li>';
-
 		echo '
 					</ul>
 				</li>
@@ -455,8 +448,7 @@ function template_menu()
 // Theme Copyright, DO NOT REMOVE THIS!
 function MinDI()
 {
-	$MD = 'Design by <a href="http://www.simplemachines.org/community/index.php?action=profile;u=312371" target="_blank">buhthc</a> | Theme by <a href="http://smftricks.com" target="_blank">SMF Tricks</a>';	
-	
+	$MD = 'Theme by <a href="https://smftricks.com" target="_blank" rel="noopener">SMF Tricks</a>';	
 	return $MD;
 }
 
@@ -464,7 +456,6 @@ function MinDI()
 function user_menu()
 {
 	global $context, $txt, $settings, $modSettings, $scripturl;
-
 
 	if (!empty($context['user']['is_logged']))
 	{
@@ -504,7 +495,7 @@ function user_menu()
 	}
 	else
 	{
-				echo '
+		echo '
 		<div class="nav-bar"><div class="nav-bar-inner">
 				<ul class="usermenu">
 					<li class="dropdown">
@@ -527,7 +518,6 @@ function user_menu()
 				</ul>
 			</div></div>';
 	}
-	
 }
 
 // Generate a strip of buttons.
@@ -565,5 +555,4 @@ function template_button_strip($button_strip, $direction = 'top', $strip_options
 			</ul>
 		</div>';
 }
-
 ?>
