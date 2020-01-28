@@ -1,12 +1,19 @@
-﻿Design by buhthc
-Theme by Diego Andrés
+﻿This theme is provided as it is by the SMF Tricks Team.
+SMF Tricks is not affiliated with or endorsed by Simple Machines.
 
-- You're not allowed to re-distribute this theme.
-- You can't sell it, or share it.
-- You're not allowed to remove the copyright
 
-Copyright - SMF Tricks 2019
+- You're not allowed to re-distribute this theme modified or not.
+- You can't sell it to someone else.
+- You can't attribute this work as your own.
+- You're not allowed to remove the SMF Tricks copyright if you didn't acquire 'copyright removal' for the product.
+- This is a Premium Theme that must be purchased in SMF Tricks website in order to install it and use it.
+- You're free to modify and make any necessary changes to this theme as long as you follow previous instructions/guidelines.
+- Support can be found in SMF Tricks website as long as you're a costumer for this product.
 
-http://www.simplemachines.org/community/index.php?action=profile;u=312371
+SMF Tricks Team.
 
-http://www.simplemachines.org/community/index.php?action=profile;u=254071
+Author:		Diego Andrés
+https://www.simplemachines.org/community/index.php?action=profile;u=254071
+
+Designer:	Buhthc
+https://www.simplemachines.org/community/index.php?action=profile;u=312371

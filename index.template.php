@@ -270,21 +270,21 @@ function template_body_below()
 			// Twitter
 			if(!empty($settings['twitter_username']))
 				echo '
-					<li><a class="social_icon twitter" href="https://twitter.com/', $settings['twitter_username'] , '" target="_blank"></a></li>';
+					<li><a class="social_icon twitter" href="https://twitter.com/', $settings['twitter_username'] , '" target="_blank" rel="noopener"></a></li>';
 
 			// Facebook
 			if(!empty($settings['facebook_username']))
 				echo '
-					<li><a class="social_icon facebook" href="https://fb.me/', $settings['facebook_username'] , '" target="_blank"></a></li>';
+					<li><a class="social_icon facebook" href="https://fb.me/', $settings['facebook_username'] , '" target="_blank" rel="noopener"></a></li>';
 
 			// Youtube
 			if(!empty($settings['youtube_username']))
 				echo '
-					<li><a class="social_icon youtube" href="https://youtube.com/', $settings['youtube_username'] , '" target="_blank"></a></li>';
+					<li><a class="social_icon youtube" href="https://youtube.com/', $settings['youtube_username'] , '" target="_blank" rel="noopener"></a></li>';
 
 			// RSS
 			echo '
-					<li><a class="social_icon rss" href="', empty($settings['rss_url']) ? '' . $scripturl . '?action=.xml;type=rss' : '' . $settings['rss_url'] . '', '" target="_blank"></a></li>
+					<li><a class="social_icon rss" href="', empty($settings['rss_url']) ? '' . $scripturl . '?action=.xml;type=rss' : '' . $settings['rss_url'] . '', '" target="_blank" rel="noopener"></a></li>
 				</ul>	
 			</div>
 		</div>
