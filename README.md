@@ -2,7 +2,7 @@
     <img src="https://smftricks.com/logos/logo.png">
  </p>
   <p align="center">
-    <img src="https://custom.simplemachines.org/themes/index.php?action=download;lemma=2734;id=16942;image">
+    <img src="https://custom.simplemachines.org/index.php?action=download;theme=2734;attach=226069;image">
  </p>
  
  ## MinDI
