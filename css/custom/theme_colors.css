@@ -1,0 +1,118 @@
+:root {
+	/* Toggle */
+	--toggle-bg:                                      #f7f7f7 url(../../images/icons/toggle.png) no-repeat 0 0 / var(--toggle-height);
+	--toggle-bg_hover:                                var(--primary-color-100) url(../../images/icons/toggle.png) no-repeat 0 0 / var(--toggle-height);
+
+	/** Edits **/
+
+	/** Custom Theme **/
+	--st-avatar-size:                                 65px;
+	--st-carousel-height:                             350px;
+
+	/** Bootstrap Main Nav **/
+	--st-nav-bg:                                      var(--primary-color-700);
+	--st-nav-border-color:                            hsl(var(--primary-color-hue), 16%, 81%);
+	--st-nav-border-radius:                           0;
+	--st-nav-border-style:                            solid;
+	--st-nav-border-width:                            1px;
+	--st-nav-box-shadow:                              none;
+
+	/** Bootstrap Main Nav Links **/
+	--st-nav-a1-bg:                                   transparent;
+	--st-nav-a1-bg_active:                            #fff;
+	--st-nav-a1-bg_active_focus:                      var(--st-nav-a1-bg_active);
+	--st-nav-a1-bg_active_hover:                      var(--st-nav-a1-bg_active);
+	--st-nav-a1-bg_focus:                             var(--st-nav-a1-bg_hover);
+	--st-nav-a1-bg_hover:                             #fff;
+	--st-nav-a1-border-color:                         transparent;
+	--st-nav-a1-border-color_active:                  var(--st-nav-a1-border-color_hover);
+	--st_nav-a1-border-color_focus:                   var(--st-nav-a1-border-color_hover);
+	--st-nav-a1-border-color_hover:                   transparent;
+	--st-nav-a1-border-radius:                        .25em;
+	--st-nav-a1-border-style:                         solid;
+	--st-nav-a1-border-width:                         0;
+	--st-nav-a1-border-width_active:                  0;
+	--st-nav-a1-border-width_focus:                   0;
+	--st-nav-a1-border-width_hover:                   0;
+	--st-nav-a1-box-shadow:                           none;
+	--st-nav-a1-box-shadow_active:                    none;
+	--st-nav-a1-box-shadow_focus:                     none;
+	--st-nav-a1-box-shadow_hover:                     none;
+	--st-nav-a1-color:                                #fff;
+	--st-nav-a1-color_active:                         var(--primary-color-800);
+	--st-nav-a1-color_active_focus:                   var(--st-nav-a1-color_active);
+	--st-nav-a1-color_active_hover:                   var(--st-nav-a1-color_active);
+	--st-nav-a1-color_focus:                          var(--st-nav-a1-color_hover);
+	--st-nav-a1-color_hover:                          #252525;
+	--st-nav-a1-font-family:                          inherit;
+	--st-nav-a1-font-size:                            .75em;
+	--st-nav-a1-font-weight:                          400;
+	--st-nav-a1-font-weight_active:                   700;
+	--st-nav-a1-font-weight_focus:                    400;
+	--st-nav-a1-font-weight_hover:                    400;
+	--st-nav-a1-height:                               2.75em;
+	--st-nav-a1-outline:                              auto;
+	--st-nav-a1-outline-offset:                       0;
+	--st-nav-a1-text-decoration:                      none;
+	--st-nav-a1-text-decoration_active:               none;
+	--st-nav-a1-text-decoration_focus:                none;
+	--st-nav-a1-text-decoration_hover:                none;
+	--st-nav-a1-text-shadow:                          none;
+	--st-nav-a1-text-shadow_active:                   none;
+	--st-nav-a1-text-shadow_focus:                    none;
+	--st-nav-a1-text-shadow_hover:                    none;
+
+	/** Bootstrap Main Nav Dropdown **/
+	--st-nav-dropdown-bg:                             var(--dropmenu-child-bg);
+	--st-nav-dropdown-border-color:                   var(--dropmenu-child-border-color);
+	--st-nav-dropdown-border-radius:                  var(--dropmenu-child-border-radius);
+	--st-nav-dropdown-border-style:                   var(--dropmenu-child-border-style);
+	--st-nav-dropdown-border-width:                   var(--dropmenu-child-border-width);
+	--st-nav-dropdown-box-shadow:                     var(--dropmenu-child-box-shadow);
+	--st-nav-dropdown-width:                          var(--dropmenu-child-width);
+
+	/** Bootstrap Main Nav Dropdown Links **/
+	--st-nav-an-bg:                                   var(--dropmenu-an-bg);
+	--st-nav-an-bg_active:                            var(--dropmenu-an-bg_active);
+	--st-nav-an-bg_active_focus:                      var(--dropmenu-an-bg_active);
+	--st-nav-an-bg_active_hover:                      var(--dropmenu-an-bg_active_hover);
+	--st-nav-an-bg_focus:                             var(--dropmenu-an-bg_focus);
+	--st-nav-an-bg_hover:                             var(--dropmenu-an-bg_hover);
+	--st-nav-an-border-color:                         var(--dropmenu-an-border-color);
+	--st-nav-an-border-color_active:                  var(--dropmenu-an-border-color_active);
+	--st-nav-an-border-color_focus:                   var(--dropmenu-an-border-color_focus);
+	--st-nav-an-border-color_hover:                   var(--dropmenu-an-border-color_hover);
+	--st-nav-an-border-radius:                        var(--dropmenu-an-border-radius);
+	--st-nav-an-border-style:                         var(--dropmenu-an-border-style);
+	--st-nav-an-border-width:                         var(--dropmenu-an-border-width);
+	--st-nav-an-border-width_active:                  var(--dropmenu-an-border-width_active);
+	--st-nav-an-border-width_focus:                   var(--dropmenu-an-border-width_focus);
+	--st-nav-an-border-width_hover:                   var(--dropmenu-an-border-width_hover);
+	--st-nav-an-box-shadow:                           var(--dropmenu-an-box-shadow);
+	--st-nav-an-box-shadow_active:                    var(--dropmenu-an-box-shadow_active);
+	--st-nav-an-box-shadow_focus:                     var(--dropmenu-an-box-shadow_focus);
+	--st-nav-an-box-shadow_hover:                     var(--dropmenu-an-box-shadow_hover);
+	--st-nav-an-color:                                var(--dropmenu-an-color);
+	--st-nav-an-color_active:                         var(--dropmenu-an-color-active);
+	--st-nav-an-color_active_focus:                   var(--dropmenu-an-color_active_focus);
+	--st-nav-an-color_active_hover:                   var(--dropmenu-an-color_active_hover);
+	--st-nav-an-color_focus:                          var(--dropmenu-an-color_focus);
+	--st-nav-an-color_hover:                          var(--dropmenu-an-color_hover);
+	--st-nav-an-font-family:                          var(--dropmenu-an-font-family);
+	--st-nav-an-font-size:                            var(--dropmenu-an-font-size);
+	--st-nav-an-font-weight:                          var(--dropmenu-an-font-weight);
+	--st-nav-an-font-weight_active:                   var(--dropmenu-an-font-weight_active);
+	--st-nav-an-font-weight_focus:                    var(--dropmenu-an-font-weight_focus);
+	--st-nav-an-font-weight_hover:                    var(--dropmenu-an-font-weight_hover);
+	--st-nav-an-height:                               var(--dropmenu-an-height);
+	--st-nav-an-outline:                              var(--dropmenu-an-outline);
+	--st-nav-an-outline-offset:                       var(--dropmenu-an-outline-offset);
+	--st-nav-an-text-decoration:                      var(--dropmenu-an-text-decoration);
+	--st-nav-an-text-decoration_active:               var(--dropmenu-an-text-decoration_active);
+	--st-nav-an-text-decoration_focus:                var(--dropmenu-an-text-decoration_focus);
+	--st-nav-an-text-decoration_hover:                var(--dropmenu-an-text-decoration_hover);
+	--st-nav-an-text-shadow:                          var(--dropmenu-an-text-shadow);
+	--st-nav-an-text-shadow_active:                   var(--dropmenu-an-text-shadow_active);
+	--st-nav-an-text-shadow_focus:                    var(--dropmenu-an-text-shadow_focus);
+	--st-nav-an-text-shadow_hover:                    var(--dropmenu-an-text-shadow_hover);
+}
