@@ -3,10 +3,18 @@
 #### 2.0 - ??
 - ![New Feature](https://smftricks.com/assets/changelog/tag--plus.png) Initial Release for SMF 2.1.x.
 ---
-#### 1.1.1 - 27 January 2020
+#### 1.2.2 - 05 January 2022
+- ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) SMF 2.0.19 patch updates.
+
+#### 1.2.1 - 08 November 2021
+- ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) Updated jQuery version.
+- ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) Updated FontAwesme version.
+- ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) Updated license.
+
+#### 1.2 - 27 January 2020
 - ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) Code cleanup.
 - ![Improvement](https://smftricks.com/assets/changelog/tag--pencil.png) SMF 2.0.17 patch updates.
-
+---
 #### 1.1 - 18 January 2016
 - ![New Feature](https://smftricks.com/assets/changelog/tag--plus.png) Theme is now responsive.
 ---
