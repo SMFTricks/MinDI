@@ -485,6 +485,7 @@ a.hide_popup {
 	.navbar-nav {
 		align-items: center;
 		display: flex;
+		flex-wrap: wrap;
 		gap: .5em;
 		user-select: none;
 	}
@@ -641,6 +642,7 @@ nav#mainNav {
 	}
 
 	ul.navbar-nav {
+		flex-wrap: wrap;
 		gap: .75em;
 	}
 	li > a {
