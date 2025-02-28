@@ -388,7 +388,7 @@ function template_menu()
 		if (!empty($button['sub_buttons']))
 		{
 			echo '
-						<ul class="dropdown-menu">';
+						<ul class="dropdown-menu dropdown-menu-end">';
 
 			foreach ($button['sub_buttons'] as $childbutton)
 			{
@@ -404,7 +404,7 @@ function template_menu()
 				if (!empty($childbutton['sub_buttons']))
 				{
 					echo '
-								<ul class="dropdown-menu">';
+								<ul class="dropdown-menu dropdown-menu-end">';
 
 					foreach ($childbutton['sub_buttons'] as $grandchildbutton)
 						echo '
